@@ -1,0 +1,41 @@
+.choose{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__head{
+
+    }
+
+    &__trans{
+        display: flex;
+        &-container{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: nowrap;
+            width: 100%;
+        }
+        margin: 5rem 0;
+    }
+
+    &__before{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        &-img{
+            height: 50vh;
+        }
+        margin: 0 2rem;
+    }
+
+    &__after{
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &-img{
+            height: 50vh;
+        }
+    }
+}

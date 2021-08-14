@@ -1,0 +1,9 @@
+.template{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 8rem 0;
+
+    &__item{
+        width: 20%;
+    }
+}

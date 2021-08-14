@@ -1,4 +1,6 @@
 @import "abstracts/variables";
+@import "abstracts/mixins";
+@import "layout/grid";
 @import "base/base";
 @import "base/typography";
 @import "layout/navbar";
@@ -6,3 +8,8 @@
 @import "layout/cover";
 @import "components/about";
 @import "components/do";
+@import "components/choose";
+@import "components/images";
+@import "components/card";
+@import "components/template";
+@import "components/softwares";

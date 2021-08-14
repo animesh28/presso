@@ -17,7 +17,7 @@ body{
     justify-content: space-around;
 }
 .hr{
-    border: .2rem solid $color-blue-dark-1;
+    border: .2rem solid $color-blue-dark-1 !important;
     width: 7%;
     margin: 1rem 0;
 }
