@@ -1,0 +1,33 @@
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin: 9rem 0;
+    &__img{
+        &-container{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
+        height: 20rem;
+    }
+
+    &__text{
+        width: 50%;
+    }
+
+    &__head{
+
+       &__hr{
+            border: .2rem solid $color-blue-dark-1;
+            width: 7%;
+            margin: 1rem 0;
+       }
+    }
+
+    &__description{
+        font-family: 'Open Sans', sans-serif;
+        margin-top: 3rem;
+    }
+}

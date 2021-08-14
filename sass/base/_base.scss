@@ -1,0 +1,23 @@
+*, *::after, *::before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    box-sizing: border-box;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.hr{
+    border: .2rem solid $color-blue-dark-1;
+    width: 7%;
+    margin: 1rem 0;
+}

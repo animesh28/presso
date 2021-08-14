@@ -1,0 +1,32 @@
+.do{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin: 9rem 0;
+
+    &__hr{
+        width: 10%;
+    }
+
+    &__text{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    &__description{
+        font-family: 'Open Sans', sans-serif;
+        margin-top: 3rem;
+    }
+
+    &__img{
+        &-container{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
+        height: 20rem;
+    }
+}

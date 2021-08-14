@@ -1,0 +1,31 @@
+.cover{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        clip-path: polygon(0% 0%, 0% 100%, 30% 100%, 45% 65%, 75% 65%, 100% 0%);
+        background-color: $color-orange-light-1;
+        z-index: -1;
+    }
+
+    &__heading{
+        margin-bottom: 1.5rem;
+    }
+
+    &__text{
+        margin-bottom: 3rem;
+    }
+
+    &__img{
+        height: 75vh;
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,26 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo{
+        height: 7rem;
+        margin: 1rem;
+    }
+    
+    &__list{
+        display: flex;
+        list-style: none;
+    }
+
+    &__item{
+        margin-right: 2rem;
+        text-transform: uppercase;
+        transition: color .4s ease-in;
+
+        &:hover{
+            color: $color-blue-dark-1;
+            cursor: pointer;
+        }
+    }
+}
