@@ -1170,7 +1170,7 @@ a.active, a:hover {
 
 @media (max-width: 37.5em) {
   .footer__copyright {
-    background: linear-gradient(55deg, #0180ff 0%, #0180ff 90%, transparent 90%);
+    background: #0180ff;
   }
 }
 
