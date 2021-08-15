@@ -9,6 +9,11 @@
 
     &__trans{
         display: flex;
+        @include respond(tab-land){
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
         &-container{
             display: flex;
             justify-content: space-around;
@@ -23,10 +28,18 @@
         flex-direction: column;
         justify-content: center;
         width: 50%;
+
+        @include respond(tab-land){
+            width: 85%;
+        }
         &-img{
             height: 50vh;
         }
         margin: 0 2rem;
+
+        @include respond(tab-land){
+            margin-bottom: 3rem;
+        }
     }
 
     &__after{
@@ -34,6 +47,10 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        @include respond(tab-land){
+            width: 85%;
+        }
         &-img{
             height: 50vh;
         }

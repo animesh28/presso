@@ -4,6 +4,20 @@
     justify-content: space-around;
     position: relative;
 
+    @include respond(tab-land){
+        flex-direction: column;
+    }
+
+    &__1{
+        @include respond(tab-land){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+    }
+
     &::before{
         content: "";
         position: absolute;
@@ -18,14 +32,27 @@
 
     &__heading{
         margin-bottom: 1.5rem;
+
+        @include respond(tab-land){
+            margin-top: 5vh;
+        }
     }
 
     &__text{
         margin-bottom: 3rem;
+
+        @include respond(tab-land){
+            text-align: center;
+        }
     }
 
     &__img{
         height: 75vh;
         margin-top: 1rem;
+
+        @include respond(tab-land){
+            height: 30vh;
+            width: 80%;
+        }
     }
 }

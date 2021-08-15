@@ -4,6 +4,14 @@
     justify-content: space-around;
     flex-wrap: nowrap;
     margin: 9rem 0;
+
+    @include respond(tab-port){
+        margin: 4rem 0;
+    }
+
+    @include respond(tab-land){
+        flex-direction: column;
+    }
     &__img{
         &-container{
             width: 50%;

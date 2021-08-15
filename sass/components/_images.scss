@@ -3,7 +3,20 @@
     align-items: center;
     justify-content: space-around;
     margin: 10rem 0;
+
+    @include respond(phone){
+        flex-direction: column;
+        justify-content: center;
+    }
     &__item{
         height: 20vh;
+        @include respond(tab-land){
+            height: 10vh;
+        }
+        @include respond(phone){
+            &:not(:last-of-type){
+                margin-bottom: 4rem;
+            }
+        }
     }
 }

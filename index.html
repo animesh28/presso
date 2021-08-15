@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Presso</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="sass/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,17 +15,23 @@
     <script src="https://kit.fontawesome.com/fc8bfde811.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar">
-        <img src="img/logo.jpg" alt="" class="navbar__logo">
-        <ul class="navbar__list">
-            <li class="navbar__item">Home</li>
-            <li class="navbar__item">About</li>
-            <li class="navbar__item">Plan</li>
-            <li class="navbar__item">Contact</li>
-            <li class="navbar__item">Login</li>
-            <li class="navbar__item">Sign Up</li>
+    
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Presso</label>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Plan</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Sign Up</a></li>
         </ul>
     </nav>
+    
     <div class="cover">
         <div class="cover__1">
             <h1 class="cover__heading">Welcome To Presso</h1>
@@ -35,7 +42,7 @@
             <img src="img/team.svg" alt="Team Work" class="cover__img">
         </div>
     </div>
-
+    
     <div class="about">
         <div class="about__img-container">
             <img src="img/about.svg" alt="" class="about__img">
@@ -44,32 +51,32 @@
             <h2 class="about__head">About Us</h2>
             <hr class="hr"/>
             <p>
-                <pre class="about__description">
+                <p class="about__description">
 We are here to with an aim to take your presentation to a whole new level
 with amazing artistic designers, we design from good to magnificent
 presentations within 24hrs
-                </pre>
+                </p>
             </p>
         </div>
     </div>
-
+    
     <div class="do">
         <div class="do__text">
             <h2 class="do__head">What We Do?</h2>
             <hr class="hr do__hr"/>
             <p>
-                <pre class="do__description">
+                <p class="do__description">
 We accept every presentation as an challenge to deliver a perfect design solution
-by implementing appropriate fonts, graphs, designs, wallpaper, infographics,
+ by implementing appropriate fonts, graphs, designs, wallpaper, infographics,
 vectors, animations, effects to deliver a perfect story.
-                </pre>
+                </p>
             </p>
         </div>
         <div class="do__img-container">
             <img src="img/do.svg" alt="" class="do__img">
         </div>
     </div>
-
+    
     <div class="choose">
         <h2 class="choose__head">Why Choose Us?</h2>
         <hr class="hr">
@@ -94,177 +101,214 @@ vectors, animations, effects to deliver a perfect story.
         <img src="img/devices.svg" alt="devices" class="images__item">
         <img src="img/security.svg" alt="security" class="images__item">
     </div>
+    
     <div class="card__wrap">
-    <div class="row">
-        <div class="col-1-of-3">
-            <div class="card">
-                <div class="card__side card__side--front">
-                    <div class="card__picture card__picture--1">
-                        <h2 class="card__heading">BASIC</h2>
-                    </div>
-                    
-                    <div class="card__details">
-                        <ul>
-                            <li>With 24 Hrs Delivery <i class="fas fa-check"></i></li>
-                            <li>Global Access <i class="fas fa-check"></i></li>
-                            <li>All Device Access <i class="fas fa-check"></i></li>
-                            <li>Slide Limit <span class="card__details-slide">(Upto 15)</span></li>
-                            <li>Live Customization <i class="fas fa-times"></i></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card__side card__side--back card__side--back-1">
-                    <div class="card__cta">
-                        <div class="card__price-box">
-                            <p class="card__price--only">Only</p>
-                            <p class="card__price--value">$7.99</p>
+        <div class="row">
+            <div class="col-1-of-3">
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="card__picture card__picture--1">
+                            <h2 class="card__heading">BASIC</h2>
                         </div>
-                        <a href="#" class="btn btn--white">Get Started</a>
+                        
+                        <div class="card__details">
+                            <ul>
+                                <li>With 24 Hrs Delivery <i class="fas fa-check"></i></li>
+                                <li>Global Access <i class="fas fa-check"></i></li>
+                                <li>All Device Access <i class="fas fa-check"></i></li>
+                                <li>Slide Limit <span class="card__details-slide">(Upto 15)</span></li>
+                                <li>Live Customization <i class="fas fa-times"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card__side card__side--back card__side--back-1">
+                        <div class="card__cta">
+                            <div class="card__price-box">
+                                <p class="card__price--only">Only</p>
+                                <p class="card__price--value">$7.99</p>
+                            </div>
+                            <a href="#" class="btn btn--white">Get Started</a>
+                        </div>
                     </div>
                 </div>
             </div>
+            
+            <div class="col-1-of-3">
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="card__picture card__picture--2">
+                            <h2 class="card__heading">PROFESSIONAL</h2>
+                        </div>
+                        
+                        <div class="card__details">
+                            <ul>
+                                <li>With 24 Hrs Delivery <i class="fas fa-check"></i></li>
+                                <li>Global Access <i class="fas fa-check"></i></li>
+                                <li>All Device Access <i class="fas fa-check"></i></li>
+                                <li>Slide Limit <span class="card__details-slide">(Upto 100)</span></li>
+                                <li>Live Customization <i class="fas fa-times"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card__side card__side--back card__side--back-2">
+                        <div class="card__cta">
+                            <div class="card__price-box">
+                                <p class="card__price--only">Only</p>
+                                <p class="card__price--value">$14.99</p>
+                            </div>
+                            <a href="#" class="btn btn--white">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-1-of-3">
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="card__picture card__picture--3">
+                            <h2 class="card__heading">PREMIUM</h2>
+                        </div>
+                        
+                        <div class="card__details">
+                            <ul>
+                                <li>With 24 Hrs Delivery <i class="fas fa-check"></i></li>
+                                <li>Global Access <i class="fas fa-check"></i></li>
+                                <li>All Device Access <i class="fas fa-check"></i></li>
+                                <li>Slide Limit <span class="card__details-slide">(Unlimited)</span></li>
+                                <li>Live Customization <i class="fas fa-check"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card__side card__side--back card__side--back-3">
+                        <div class="card__cta">
+                            <div class="card__price-box">
+                                <p class="card__price--only">Only</p>
+                                <p class="card__price--value">$21.99</p>
+                            </div>
+                            <a href="#" class="btn btn--white">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="about">
+        <div class="about__img-container">
+            <img src="img/people.svg" alt="" class="about__img">
+        </div>
+        <div class="about__text">
+            <h2 class="about__head">Business Presentation Or University Presentation</h2>
+            <hr class="hr"/>
+            <p>
+                <p class="about__description">
+                    We got experts in all field to match your design needs
+                </p>
+            </p>
+        </div>
+    </div>
+    
+    <div class="do">
+        <div class="do__text">
+            <h2 class="do__head">Got Presentation Tomorrow?</h2>
+            <hr class="hr do__hr"/>
+            <p>
+                <p class="do__description">
+                    No worries we deliver each and every presentation within 24 hours
+                    after the uploading time
+                </p>
+            </p>
+        </div>
+        <div class="do__img-container">
+            <img src="img/clock.svg" alt="" class="do__img">
+        </div>
+    </div>
+    
+    <div class="about">
+        <div class="about__img-container">
+            <img src="img/secure.svg" alt="" class="about__img">
+        </div>
+        <div class="about__text">
+            <h2 class="about__head">Security</h2>
+            <hr class="hr"/>
+            <p>
+                <p class="about__description">
+                    Your data is 100% secured...! Your security is our fundamental
+                    responsibility, we respect your privacy and we bond to keep
+                    it secured. In that case we delete your content from our
+                    databse after 28 days of delivery.
+                </p>
+            </p>
+        </div>
+    </div>
+    <center>
+        
+        <h2 class="choose__head">Our Portfolio</h2>
+        <hr class="hr">
+        
+        <div class="template">
+            <img src="img/grid1.jpg" alt="" class="template__item">
+            <img src="img/grid2.jpg" alt="" class="template__item">
+            <img src="img/grid3.jpg" alt="" class="template__item">
         </div>
         
-        <div class="col-1-of-3">
-            <div class="card">
-                <div class="card__side card__side--front">
-                    <div class="card__picture card__picture--2">
-                        <h2 class="card__heading">PROFESSIONAL</h2>
-                    </div>
-                   
-                    <div class="card__details">
-                        <ul>
-                            <li>With 24 Hrs Delivery <i class="fas fa-check"></i></li>
-                            <li>Global Access <i class="fas fa-check"></i></li>
-                            <li>All Device Access <i class="fas fa-check"></i></li>
-                            <li>Slide Limit <span class="card__details-slide">(Upto 100)</span></li>
-                            <li>Live Customization <i class="fas fa-times"></i></li>
-                        </ul>
-                    </div>
+        <div class="softwares">
+            <h2 class="softwares__head">Softwares We Use For Designing</h2>
+            <div class="softwares__img-wrap">
+                <div class="softwares__img-contain">
+                    <img src="img/ppt.png" alt="" class="softwares__img">
+                    <br>
+                    Microsoft PowerPoint
                 </div>
-                <div class="card__side card__side--back card__side--back-2">
-                    <div class="card__cta">
-                        <div class="card__price-box">
-                            <p class="card__price--only">Only</p>
-                            <p class="card__price--value">$14.99</p>
-                        </div>
-                        <a href="#" class="btn btn--white">Get Started</a>
-                    </div>
+                <div class="softwares__img-contain">
+                    <img src="img/keynote.png" alt="" class="softwares__img">
+                    <br>
+                    Key Note
+                </div>
+                <div class="softwares__img-contain">
+                    <img src="img/slides.png" alt="" class="softwares__img">
+                    <br>
+                    Google Slides
                 </div>
             </div>
         </div>
-        
-        <div class="col-1-of-3">
-            <div class="card">
-                <div class="card__side card__side--front">
-                    <div class="card__picture card__picture--3">
-                        <h2 class="card__heading">PREMIUM</h2>
-                    </div>
-                    
-                    <div class="card__details">
-                        <ul>
-                            <li>With 24 Hrs Delivery <i class="fas fa-check"></i></li>
-                            <li>Global Access <i class="fas fa-check"></i></li>
-                            <li>All Device Access <i class="fas fa-check"></i></li>
-                            <li>Slide Limit <span class="card__details-slide">(Unlimited)</span></li>
-                            <li>Live Customization <i class="fas fa-check"></i></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card__side card__side--back card__side--back-3">
-                    <div class="card__cta">
-                        <div class="card__price-box">
-                            <p class="card__price--only">Only</p>
-                            <p class="card__price--value">$21.99</p>
-                        </div>
-                        <a href="#" class="btn btn--white">Get Started</a>
-                    </div>
+    </center>
+    <footer class="footer">
+        <div class="footer__col footer__col-1">
+            <img src="img/logo.jpg" alt="" class="footer__logo">
+            <br>
+            <h3 class="footer__head"><i class="fas fa-ellipsis-v"></i> Follow Us</h3>
+            <div class="btn_wrap">
+                <span>Social</span>
+                <div class="container">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-github"></i>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-
-<div class="about">
-    <div class="about__img-container">
-        <img src="img/people.svg" alt="" class="about__img">
-    </div>
-    <div class="about__text">
-        <h2 class="about__head">Business Presentation Or University Presentation</h2>
-        <hr class="hr"/>
-        <p>
-            <pre class="about__description">
-We got experts in all field to match your design needs
-            </pre>
-        </p>
-    </div>
-</div>
-
-<div class="do">
-    <div class="do__text">
-        <h2 class="do__head">Got Presentation Tomorrow?</h2>
-        <hr class="hr do__hr"/>
-        <p>
-            <pre class="do__description">
-No worries we deliver each and every presentation within 24 hours
-after the uploading time
-            </pre>
-        </p>
-    </div>
-    <div class="do__img-container">
-        <img src="img/clock.svg" alt="" class="do__img">
-    </div>
-</div>
-
-<div class="about">
-    <div class="about__img-container">
-        <img src="img/secure.svg" alt="" class="about__img">
-    </div>
-    <div class="about__text">
-        <h2 class="about__head">Security</h2>
-        <hr class="hr"/>
-        <p>
-            <pre class="about__description">
-Your data is 100% secured...! Your security is our fundamental responsibility, we
-respect your privacy and we bond to keep it secured. In that case we delete your
-content from our databse after 28 days of delivery.
-            </pre>
-        </p>
-    </div>
-</div>
-<center>
-
-<h2 class="choose__head">Our Portfolio</h2>
-<hr class="hr">
-
-<div class="template">
-    <img src="img/grid1.jpg" alt="" class="template__item">
-    <img src="img/grid2.jpg" alt="" class="template__item">
-    <img src="img/grid3.jpg" alt="" class="template__item">
-</div>
-
-<div class="softwares">
-    <h2 class="softwares__head">Softwares We Use For Designing</h2>
-    <div class="softwares__img-wrap">
-        <div class="softwares__img-contain">
-        <img src="img/ppt.png" alt="" class="softwares__img">
-        <br>
-        Microsoft PowerPoint
+        <div class="footer__col">
+            <h3 class="footer__head"><i class="fas fa-ellipsis-v"></i> Useful links</h3>
+            <br>
+            <ul class="footer__list">
+                <li class="footer__list-item">Home</li>
+                <li class="footer__list-item">About</li>
+                <li class="footer__list-item">Our Plan</li>
+                <li class="footer__list-item">Contact Us</li>
+            </ul>
         </div>
-        <div class="softwares__img-contain">
-        <img src="img/keynote.png" alt="" class="softwares__img">
-        <br>
-        Key Note
+        <div class="footer__col">
+            <h3 class="footer__head"><i class="fas fa-ellipsis-v"></i> Contact Us</h3>
+            <br>
+            <ul class="footer__list">
+                <li class="footer__list-item">303, Goodwill Square, Dhanori, Pune 411015</li>
+                <li class="footer__list-item">pressodesigningservices@gmail.com</li>
+                <li class="footer__list-item">+918379537586 +918379537576 +918379537656</li>
+            </ul>
         </div>
-        <div class="softwares__img-contain">
-        <img src="img/slides.png" alt="" class="softwares__img">
-        <br>
-        Google Slides
-        </div>
-    </div>
-</div>
-
-
-  
+    </footer>
+    <div class="footer__copyright">&copy; PRESO | Designed by Global Infocloud Pvt Ltd | All Rights Reserved</div>
+    
 </body>
 </html>

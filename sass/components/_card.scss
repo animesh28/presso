@@ -7,6 +7,7 @@
         color: red;
     }
 }
+
 .card{
 
     &__wrap{
@@ -97,11 +98,16 @@
             list-style: none;
             width: 80%;
             margin: 0 auto;
+            display: block;
+             word-wrap: break-word; 
             
             li{
                 text-align: center;
                 font-size: 1.5rem;
                 padding: 1rem;
+                display:list-item;
+                width: 100%;
+                word-break: break-all;
                 
                 &:not(:last-child){
                     border-bottom: 1px solid $color-grey-light-2;
@@ -142,7 +148,7 @@
         font-weight: 100;
     }
     
-    @include respond(tab-port){
+    @include respond(tab-land){
         height: auto;
         border-radius: 3px;
         background-color: $color-white;
